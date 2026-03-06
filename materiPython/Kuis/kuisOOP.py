@@ -1,0 +1,24 @@
+class Animal:
+     def __init__(self, name: str, age: int, species:str):
+        self.name = name
+        self.age = age
+        self.species = species
+
+class Cat(Animal):
+  def deskripsi(self):
+    print(f"{self.name} adalah kucing berjenis {self.species} yang sudah berumur {self.age} tahun")
+  def suara(self):
+    print("Meow!")
+
+#   def deskripsi(self):
+#     return f"{self.name} adalah kucing berjenis {self.species} yang sudah berumur {self.age} tahun"
+#   def suara(self):
+#     return "Meow!"
+  
+# myCat = Cat("Neko", 3, "Persian")
+# print(myCat.deskripsi())
+  
+myCat = Cat("Neko", 3, "Persian")
+myCat.deskripsi()
+
+  
